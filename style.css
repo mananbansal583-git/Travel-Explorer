@@ -1,0 +1,221 @@
+* {
+  margin: 0;   /*side lines*/
+  padding: 0;  /*diff between content and border*/
+  box-sizing: border-box;  /*it is the total sum of everything whereas default is going out*/
+  font-family: 'Poppins', sans-serif; /*design*/
+}
+
+body {
+  background: #fff;    /*background color*/
+  color: #333;  /*text color*/   
+  scroll-behavior: smooth;  /*for smooth scrolling*/
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background:linear-gradient(to right,rgb(251, 30, 30),hotpink );
+  color: #fff;
+  padding: 1rem 3rem;  /*rem is for compatibility on all devices*/
+  display: flex;
+  justify-content: space-between; /*to give space between flex items*/
+  align-items: center;
+  z-index: 1000;  /*higher the z index on the more top it will be */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;  /*light or bold*/
+  transition: 0.3s ease;  /*content changing time*/
+}
+
+.navbar a:hover {
+  transform: scale(1.2); /*zoom animation*/
+  color: #ffe600;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 10px #000;
+}
+
+.hero button {
+  background: #ff007f;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 12px; /*curveness of button*/
+  cursor: pointer;  /*change the cursor to handd icon*/
+  transition: 0.3s;
+}
+.hero button:hover {
+  transform: scale(1.1);
+  background: #ffdb58;
+  color: #000;
+}
+
+#destinations {
+  padding: 5rem 2rem;
+  background: #fff4e6;
+  text-align: center;
+}
+
+
+.dest{
+  display: flex;
+  flex-wrap: wrap;            /* allows wrapping to new lines */
+  gap: 2rem;                  /* same spacing between items */
+}
+
+.dest > * {              /*targets each direct child (the flex items)*/
+  flex: 1 1 250px;            /* grow, shrink, and base width */
+}
+
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+   
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+   
+}
+
+.card:hover {
+  transform: scale(1.05);  /* it is zooming the image*/
+}
+
+/* Gallery */
+#gallery {
+  padding: 5rem 2rem;
+  background: #e0ffe6;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /*"Make as many responsive columns as will fit — each at least 250px wide, and stretch to fill leftover space evenly."*/
+  gap: 1.5rem;
+  margin-top: 2rem; 
+  align-items: start; /* ensures all cards align at top */
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;         /* forces equal image height */
+  object-fit: cover;     /* crops neatly, keeps proportions */
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: rotate(4deg) scale(1.05);
+  z-index: 2; /* keeps it above other images while hovering */
+}
+
+
+/* Packages */
+#packages {
+  padding: 5rem 2rem;
+  background: #f0f0ff;
+  text-align: center;
+}
+
+table { 
+  width: 80%;
+  margin: 2rem auto;  /*Give some breathing space vertically and center horizontally.*/
+  border-collapse: collapse;   /*Make the table look neat by merging borders together.*/
+  border-radius: 10px;
+}
+
+th, td {                           /*table header , table data*/
+  padding: 1rem;
+  border: 2px solid #fff;
+}
+
+th {
+  background: #ff007f;
+  color: white;
+}
+td {
+  background: #fff;
+}
+
+/* Contact */
+#contact {
+  background: #ffe6f2;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  background: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;  
+}
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;  /*When you click a nav link, the scroll glides instead of snapping.*/
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
