@@ -7,8 +7,7 @@ This project demonstrates modern layout techniques, smooth navigation, card-base
 
 ## 🚀 Live Preview
 
-(Add your deployed Vercel link here if available)
-
+https://travel-explorer-4504.vercel.app/
 ---
 
 ## 📌 Overview
