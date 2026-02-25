@@ -34,7 +34,7 @@ No frameworks or libraries are used — everything is built from scratch.
 - 💼 Styled travel packages pricing table
 - 💌 Contact form with clean input styling
 - 🎨 Hover animations and smooth transitions
-- 📱 Responsive layout principles
+- 📱 Responsive layout principlesss
 
 ---
 
