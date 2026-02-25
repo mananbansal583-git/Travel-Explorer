@@ -10,7 +10,7 @@ This project demonstrates modern layout techniques, smooth navigation, card-base
 https://travel-explorer-4504.vercel.app/
 ---
 
-## 📌 Overview
+## 📌 Overviews
 
 Travel Explorer is a static frontend website structured into multiple sections to simulate a real-world travel landing page.
 
