@@ -12,7 +12,7 @@ https://travel-explorer-4504.vercel.app/
 
 ## 📌 Overview
 
-Travel Explorer is a static frontend website structured into multiple sections to simulate a real-world travel landing page.
+Travel Explorer is a static frontend website structured into multiple sections to simulate a real-world travel landing page
 
 The focus of this project is:
 
